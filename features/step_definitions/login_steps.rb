@@ -1,11 +1,9 @@
 Dado('que acesso o formulário de Login') do
-  visit 'https://mark7.herokuapp.com'
+  @login_page.load
 end
 
 Quando('faço login com {string} e {string}') do |email, senha|
-  find('#login_email').set email
-  find('#login_password').set senha
-  find('button[id*=btnLogin').click
+  @login_page.logar(email,senha)
 end
 
 Então('sou autenticado com sucesso') do

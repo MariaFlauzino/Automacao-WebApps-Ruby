@@ -1,5 +1,5 @@
 #language:pt
-
+@release
 Funcionalidade: Login
     Para que somente eu possa ver as minhas tarefas
     Sendo um usuário 
